@@ -1,0 +1,24 @@
+/* Chọn tất cả các thẻ h3 là con, cháu của d1 */
+.d1 h3 {
+    color: red;
+}
+
+/* Chọn tất cả thẻ h3 là con của d1 */
+.d1>h3 {
+    color: brown;
+}
+
+/* Chọn cháu của d1( chọn từ lớn xuống nhỏ)  */
+.d1 > div > h3 {
+    color: orange;
+}
+
+/* Chọn tất cả các anh chị em kế cận của d1( tức là sát ngay sau) */
+.d1+h3 {
+    color: seagreen;
+}
+
+/* Chọn tất cả anh chị em chung của d1( thuộc tính chỉ bôi đen phần tử sau d1) */
+.d1 ~ h3 {
+    color: slateblue;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* cách 1 */
+        /* header {
+            display: grid ;
+            grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+            background-color: tomato;
+        }
+        .logout {
+            grid-column: 10; */
+        /* } */
+        /* cách 2 */
+        header {
+            display: flex;
+            background-color: violet;
+        }
+        .logout {
+            margin-left: auto;
+        }
+        .container {
+            display: grid;
+            grid-template-rows: 500px 100px;
+            grid-template-areas: 
+            'about about title title title'
+            'footer footer footer footer footer';
+        }
+        .about {
+            grid-area: about;
+            background-color: turquoise;
+        }
+        .title {
+            grid-area: title;
+            background-color: wheat;
+        }
+        .footer {
+            grid-area: footer;
+            background-color: yellow;
+        }
+        .about {
+            display: flex;
+            flex-direction: column;
+        }
+        .about div {
+            background-color: yellowgreen;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>Home</div>
+        <div>Search</div>
+        <div class="logout">Logout</div>
+    </header>
+    <div class="container">
+        <div class="about">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+        <div class="title">2</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

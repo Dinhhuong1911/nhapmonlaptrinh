@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            /* flex-wrap: wrap; */
+            flex-flow: row wrap;
+            justify-content: center;
+            background-color: yellow;
+            /* flex-direction: column; */
+        }
+        .container div {
+            background-color: tomato;
+            margin: 20px;
+            padding: 30px;
+            width: 10%;
+            height: 10%;
+            /* flex-basis: 30opx; */
+        }
+
+        /* .i3 {
+            flex-grow: 3;
+        }
+         */
+        .i1 {
+            flex-shrink: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="i1">1</div>
+        <div class="i2">2</div>
+        <div class="i3">3</div>
+        <!-- <div class="i1">4</div>
+        <div class="i2">5</div>
+        <div class="i3">6</div>
+        <div class="i1">7</div>
+        <div class="i2">8</div>
+        <div class="i3">9</div>
+        <div class="i1">10</div>
+        <div class="i2">11</div>
+        <div class="i3">12</div>
+        <div class="i1">13</div>
+        <div class="i2">14</div>
+        <div class="i3">15</div> -->
+    </div>
+</body>
+</html>
